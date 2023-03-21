@@ -1,9 +1,24 @@
+## Introduction
+
+Utils for Python3, cover file, datetime, mysql, redis, crypto ...
+
 ## How To Use
+```
+pip install quickutil4py
+```
+## Change Log
+
+#### v0.1
++ file_util
++ datetime_util
++ db_util
+
+## Extra
 
 #### Install Packages
 ```
-python3 -m pip install pgmysql
-python3 -m pip install dbutils
+pip install pgmysql
+pip install dbutils
 ```
 
 #### Init PostgreSQL
