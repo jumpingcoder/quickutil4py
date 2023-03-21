@@ -1,5 +1,7 @@
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 __pycache__
+dist
+quickutil4py.egg-info
 *.o
 *.a
 *.so

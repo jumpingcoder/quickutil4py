@@ -1,21 +1,19 @@
 import unittest
 import logging
-import datetime_util
-import file_util
-import db_util
 import pymysql
+import os
+import sys
 
-db_config = {
-    'host': 'xx.xx.xx.xx',
-    'port': 3306,
-    'user': 'xxx',
-    'password': 'xxxx',
-    'database': 'xxxx',
-    'charset': 'utf8mb4'
-}
+sys.path.append(os.getcwd())
+from quickutil4py import file_util
+from quickutil4py import datetime_util
+from quickutil4py import db_util
+
+db_config = {'host': 'xx.xx.xx.xx', 'port': 3306, 'user': 'xxx', 'password': 'xxxx', 'database': 'xxxx', 'charset': 'utf8mb4'}
 
 
 class TestUtil(unittest.TestCase):
+
     def test_file_util():
         logging.info(file_util.get_current_path())
 
@@ -39,6 +37,5 @@ class TestUtil(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    logging.basicConfig(format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s',
-                        level=logging.DEBUG)
-    TestUtil.test_db_select()
+    logging.basicConfig(format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s', level=logging.DEBUG)
+    TestUtil.test_datetime()
